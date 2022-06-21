@@ -1,0 +1,8 @@
+version: '3'
+services:
+  latex:
+    build: .
+    image: latex
+    container_name: myLaTeXContainer
+    volumes: 
+      - ./workspace:/workspace
