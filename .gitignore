@@ -1,2 +1,7 @@
 .devcontainer/*
 .vscode/*
+*.aux
+*.fls
+*.log
+*.dvi
+*.fdb_latexmk

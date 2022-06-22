@@ -3,6 +3,7 @@ services:
   latex:
     build: .
     image: latex
-    container_name: myLaTeXContainer
+    container_name: my_latex_container
     volumes: 
-      - ./workspace:/workspace
+      - ./workspace:/workspace/
+    command: "latexmk -pdfdvi -f /workspace/test.tex"
